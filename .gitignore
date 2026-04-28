@@ -1,0 +1,17 @@
+# 1. Инициализация репозитория
+git init
+
+# 2. Создание .gitignore
+echo "weather_diary.json" > .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo ".DS_Store" >> .gitignore
+
+# 3. Фиксация изменений
+git add .
+git commit -m "feat: initial commit - Weather Diary GUI"
+
+# 4. Подключение к GitHub (замените URL на свой)
+git remote add origin https://github.com/ВАШ_НИК/weather-diary.git
+git branch -M main
+git push -u origin main
